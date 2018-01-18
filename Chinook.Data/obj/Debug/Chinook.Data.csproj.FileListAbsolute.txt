@@ -1,0 +1,4 @@
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.pdb
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb
