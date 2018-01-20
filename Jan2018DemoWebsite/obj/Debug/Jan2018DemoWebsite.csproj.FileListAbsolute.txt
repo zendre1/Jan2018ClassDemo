@@ -75,3 +75,4 @@ C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microso
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.pdb
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.csprojResolveAssemblyReference.cache
