@@ -23,5 +23,9 @@ namespace ChinookSystem.DAL
         public virtual DbSet<Artist> Artists { get; set; }
         public virtual DbSet<Album> Albums { get; set; }
         public virtual DbSet<Track> Tracks { get; set; }
+        public virtual DbSet<Genre> Genres { get; set; }
+        public virtual DbSet<Playlist> Playlists { get; set; }
+        public virtual DbSet<PlaylistTrack> PlaylistTracks { get; set; }
+
     }
 }

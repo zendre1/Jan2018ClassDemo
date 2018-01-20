@@ -20,16 +20,27 @@ namespace Chinook.Data.Entities
         [Required(ErrorMessage = "Track Name is required.")]
         [StringLength(200, ErrorMessage = "Track Name has a maximum of 200 characters")]
         public string Name { get; set; }
+
         public int? AlbumId { get; set; }
+
         public int MediaTypeId { get; set; }
+
         public int? GenreId { get; set; }
+
         [StringLength(220, ErrorMessage = "composer has a maximum of 220 characters")]
         public string Composer { get; set; }
+
         public int Milliseconds { get; set; }
+
         public int? Bytes { get; set; }
+
         public decimal UnitPrice { get; set; }
 
         //Navigational properties
         public virtual Album Album { get; set; }
+        public virtual MediaType MediaType { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual ICollection<PlaylistTrack> PlaylistTrack { get; set; }
+
     }
 }

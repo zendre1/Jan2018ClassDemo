@@ -2,3 +2,8 @@ C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.pdb
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.pdb
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csproj.CoreCompileInputs.cache
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb

@@ -10,3 +10,16 @@ C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\ChinookSystem\bin\Debug\Entity
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\ChinookSystem\bin\Debug\Chinook.Data.pdb
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\ChinookSystem.dll.config
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\ChinookSystem.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\ChinookSystem.pdb
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\Chinook.Data.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\Chinook.Data.pdb
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.xml
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\obj\Debug\ChinookSystem.csprojResolveAssemblyReference.cache
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\obj\Debug\ChinookSystem.csproj.CoreCompileInputs.cache
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\obj\Debug\ChinookSystem.dll
+C:\Users\zsendre\Source\Repos\Jan2018ClassDemo\ChinookSystem\obj\Debug\ChinookSystem.pdb
