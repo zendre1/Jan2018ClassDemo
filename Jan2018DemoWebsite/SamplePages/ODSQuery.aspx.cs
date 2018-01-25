@@ -27,6 +27,12 @@ namespace Jan2018DemoWebsite.SamplePages
             //use the .FindControl("IdControlName") to
             //access the desired control
             string albumid = (agvrow.FindControl("AlbumId") as Label).Text;
+            //send the extracted value to another specified page
+            //pagename?parameterset&parameterset&....
+            // ? parameter set following
+            // Parameter set  idlabel=value
+            // & separates multiple parameter sets
+            Response.Redirect("AlbumDetails.aspx?aid=" + albumid);
         }
     }
 }
