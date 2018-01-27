@@ -1,34 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-#region Additional Namespaces
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-#endregion
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
 namespace Chinook.Data.Entities
 {
-    [Table("Albums")]
-    public class Album
+    public partial class Album
     {
-        [Key]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Album()
+        {
+            Tracks = new HashSet<Track>();
+        }
+
         public int AlbumId { get; set; }
 
-        [Required(ErrorMessage = "Album Title is required.")]
-        [StringLength(160, ErrorMessage = "Album title has a maximum of 160 characters")]
+        [Required]
+        [StringLength(160)]
         public string Title { get; set; }
+
         public int ArtistId { get; set; }
+
         public int ReleaseYear { get; set; }
 
-        [StringLength(50, ErrorMessage = "Album Label has a maximum of 50 characters")]
+        [StringLength(50)]
         public string ReleaseLabel { get; set; }
 
-        //navigational properties
         public virtual Artist Artist { get; set; }
-        public virtual ICollection<Track> Tracks { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Track> Tracks { get; set; }
     }
 }
