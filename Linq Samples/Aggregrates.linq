@@ -81,6 +81,18 @@ select new
 //list all sales support employees showing their fullname (lastname, firstname),
 //their title and the number of customers each supports. Order by fullname
 
+from x in Employees
+where x.Title.Contains("Support")
+orderby x.LastName, x.FirstName
+select new
+{
+	Name = x.LastName + ", " + x.FirstName,
+	title = x.Title,
+	ClientCount = x.SupportRepIdCustomers.Count()
+}
+
+
+
 
 
 
