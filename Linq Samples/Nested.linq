@@ -23,24 +23,8 @@ void Main()
 	// x.navigationproperty will point to the current children belonging
 	//   to the x record
 	
-	//from employeeRow in Employees
-	//where employeeRow.Title.Contains("Support")
-	//orderby employeeRow.LastName, employeeRow.FirstName
-	//select new
-	//{
-	//	Name = employeeRow.LastName + ", " + employeeRow.FirstName,
-	//	//title = employeeRow.Title,
-	//	ClientCount = employeeRow.SupportRepIdCustomers.Count(),
-	//	ClientList = from customerRowOfemployeeRow in employeeRow.SupportRepIdCustomers
-	//					orderby customerRowOfemployeeRow.LastName, 
-	//								customerRowOfemployeeRow.FirstName
-	//					select new
-	//							{
-	//								Client = customerRowOfemployeeRow.LastName + ", " + 
-	//											customerRowOfemployeeRow.FirstName,
-	//								Phone = customerRowOfemployeeRow.Phone
-	//							}
-	//}
+	var results = Employee_GetClientList();
+	results.Dump();
 	
 	//Create a list of albums showing its title and artist.
 	//Show albums with 5 or more tracks only.
@@ -73,23 +57,23 @@ void Main()
 	//show the playlist name, and list of tracks.
 	//for each track show the song name, and Genre
 	
-	var trackcountlimit = 15;  //could be an input parameter
-	
-	//use of a "parameter value" on your query
-	
-	var results = from x in Playlists
-				where x.PlaylistTracks.Count() > trackcountlimit
-				select new ClientPlaylist
-				{
-					playlist = x.Name,
-					songs = (from y in x.PlaylistTracks
-							select new TracksAndGenre
-							{
-								songtitle = y.Track.Name,
-								songgenre = y.Track.Genre.Name,
-							}).ToList()
-				};
-	results.Dump();
+//	var trackcountlimit = 15;  //could be an input parameter
+//	
+//	//use of a "parameter value" on your query
+//	
+//	var results = from x in Playlists
+//				where x.PlaylistTracks.Count() > trackcountlimit
+//				select new ClientPlaylist
+//				{
+//					playlist = x.Name,
+//					songs = (from y in x.PlaylistTracks
+//							select new TracksAndGenre
+//							{
+//								songtitle = y.Track.Name,
+//								songgenre = y.Track.Genre.Name,
+//							}).ToList()
+//				};
+//	results.Dump();
 
 }
 
@@ -124,3 +108,56 @@ public class ClientPlaylist
 	public string playlist {get;set;}
 	public List<TracksAndGenre> songs{get;set;}
 }
+
+public class ClientInfo
+{
+	public string Client{get;set;}
+	public string Phone{get;set;}
+}
+
+public class EmployeeClients
+{
+	public string Name{get;set;}
+	public int ClientCount{get;set;}
+	public IEnumerable<ClientInfo> ClientList{get;set;}
+}
+
+//in the BLL the quest is in a method
+//create the method and test here
+public List<EmployeeClients> Employee_GetClientList()
+{
+	var results = from employeeRow in Employees
+		where employeeRow.Title.Contains("Support")
+		orderby employeeRow.LastName, employeeRow.FirstName
+		select new EmployeeClients
+		{
+			Name = employeeRow.LastName + ", " + employeeRow.FirstName,
+			//title = employeeRow.Title,
+			ClientCount = employeeRow.SupportRepIdCustomers.Count(),
+			ClientList = from customerRowOfemployeeRow in employeeRow.SupportRepIdCustomers
+							orderby customerRowOfemployeeRow.LastName, 
+										customerRowOfemployeeRow.FirstName
+							select new ClientInfo
+									{
+										Client = customerRowOfemployeeRow.LastName + ", " + 
+													customerRowOfemployeeRow.FirstName,
+										Phone = customerRowOfemployeeRow.Phone
+									}
+		};
+	return results.ToList();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
