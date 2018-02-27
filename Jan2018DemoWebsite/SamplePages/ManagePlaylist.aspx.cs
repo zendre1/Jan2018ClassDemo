@@ -11,12 +11,16 @@ namespace Jan2018DemoWebsite.SamplePages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TracksSelectionList.DataSource = null;
         }
 
         protected void ArtistFetch_Click(object sender, EventArgs e)
         {
-
+            //code to go here
+            TracksBy.Text = "Artist";
+            SearchArgID.Text = ArtistDDL.SelectedValue;
+            //refresh the track list display
+            TracksSelectionList.DataBind();
         }
 
         protected void MediaTypeFetch_Click(object sender, EventArgs e)
@@ -54,9 +58,23 @@ namespace Jan2018DemoWebsite.SamplePages
 
         }
 
-        protected void ListView1_ItemCommand(object sender, ListViewCommandEventArgs e)
+        protected void TracksSelectionList_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
-
+            string arg = e.CommandArgument.ToString();
+            PlaylistName.Text = arg;
         }
+
+
+
+        //protected void TracksSelectionList_Command(object sender, CommandEventArgs e)
+        //{
+        //    string arg = e.CommandArgument.ToString();
+        //    PlaylistName.Text = arg;
+        //}
+
+        //protected void AddtoPlaylist_Command(object sender, CommandEventArgs e)
+        //{
+
+        //}
     }
 }

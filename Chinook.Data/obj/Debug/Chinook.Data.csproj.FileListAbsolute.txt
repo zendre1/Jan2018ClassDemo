@@ -7,3 +7,13 @@ C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityF
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.dll.config
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.dll
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Chinook.Data.pdb
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.dll
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.xml
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb
+C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csprojResolveAssemblyReference.cache

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 #region Additional Namespaces
 using Chinook.Data.Entities;
+using Chinook.Data.DTOs;
+using Chinook.Data.POCOs;
 using ChinookSystem.DAL;
 using System.ComponentModel;
 #endregion
@@ -79,6 +81,22 @@ namespace ChinookSystem.BLL
                 }
                 context.Albums.Remove(existing);
                 context.SaveChanges();
+            }
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<SelectionList> List_AlbumTitles()
+        {
+            using (var context = new ChinookContext())
+            {
+                var results = from x in context.Albums
+                              orderby x.Title
+                              select new SelectionList
+                              {
+                                  IDValueField = x.AlbumId,
+                                  DisplayText = x.Title
+                              };
+                return results.ToList();
             }
         }
     }
