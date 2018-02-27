@@ -1,11 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePlaylist.aspx.cs" Inherits="Jan2018DemoWebsite.SamplePages.ManagePlaylist" %>
+
+<%@ Register Src="~/UserControls/MessageUserControl.ascx" TagPrefix="uc1" TagName="MessageUserControl" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div>
     <h1>Manage Playlists (UX TRX Sample)</h1>
 </div>
+    <div class="row" >
+        <div class="col-md-12">
+        <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
+
+        </div>
+    </div>
     <div class="row">
     <div class="col-sm-2">
-        <asp:Label ID="Label1" runat="server" Text="Artist"></asp:Label><br />
+        <asp:Label ID="Label1" runat="server" Text="Artist" ></asp:Label><br />
         <asp:DropDownList ID="ArtistDDL" runat="server"
             Width="150px" DataSourceID="ArtistDDLODS" 
             DataTextField="DisplayText" 
@@ -173,32 +182,37 @@
              Caption="PlayList" GridLines="Horizontal" BorderStyle="None">
             <Columns>
                 <asp:TemplateField >
-                    <ItemTemplate>
+                    <ItemTemplate >
                         <asp:CheckBox ID="Selected" runat="server" />
                         <asp:Label runat="server" ID="TrackId"
                             Text='<%# Eval("TrackID") %>' Visible="false"></asp:Label>
+                        &nbsp;&nbsp;
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Track">
                     <ItemTemplate>
-                        <asp:Label runat="server" ID="TrackNumber"
+                        <asp:Label runat="server" ID="TrackNumber" Width="40px"
                             Text='<%# Eval("TrackNumber") %>'></asp:Label>
+                          &nbsp;&nbsp;
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Name">
                     <ItemTemplate>
                         <asp:Label runat="server" ID="TrachName"
                             Text='<%# Eval("TrackName") %>'></asp:Label>
+                          &nbsp;&nbsp;
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Time (m:s)">
                     <ItemTemplate>
-                        <asp:Label runat="server" ID="Milliseconds"
+                        <asp:Label runat="server" ID="Milliseconds" Width="80px"
                             Text='<%# string.Format("{0:0.0}", (int)Eval("Milliseconds")/60000m)  %>'></asp:Label>
+                          &nbsp;&nbsp;
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="($)">
                     <ItemTemplate>
+                          
                         <asp:Label runat="server" ID="UnitPrice"
                             Text='<%# Eval("UnitPrice") %>'></asp:Label>
                     </ItemTemplate>
@@ -215,30 +229,35 @@
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="List_ArtistNames" 
         TypeName="ChinookSystem.BLL.ArtistController"
+         OnSelected="CheckForException"
          >
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="MediaTypeDDLODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="List_MediaTypeNames" 
         TypeName="ChinookSystem.BLL.MediaTypeController"
+         OnSelected="CheckForException"
          >
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="GenreDDLODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="List_GenreNames" 
         TypeName="ChinookSystem.BLL.GenreController"
+         OnSelected="CheckForException"
          >
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="AlbumDDLODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="List_AlbumTitles" 
         TypeName="ChinookSystem.BLL.AlbumController"
+         OnSelected="CheckForException"
          >
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="TrackSelectionListODS" runat="server" 
         OldValuesParameterFormatString="original_{0}" 
         SelectMethod="List_TracksForPlaylistSelection" 
         TypeName="ChinookSystem.BLL.TrackController"
+         OnSelected="CheckForException"
          >
         <SelectParameters>
             <asp:ControlParameter ControlID="TracksBy" PropertyName="Text" Name="tracksby" Type="String"></asp:ControlParameter>
