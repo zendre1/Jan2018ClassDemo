@@ -17,4 +17,3 @@ C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFr
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csprojResolveAssemblyReference.cache
-C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csprojResolveAssemblyReference.cache
