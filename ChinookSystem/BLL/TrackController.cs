@@ -46,6 +46,17 @@ namespace ChinookSystem.BLL
             }
         }
 
-       
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<TrackList> List_TracksForPlaylistSelection(string tracksby, int argid)
+        {
+            using (var context = new ChinookContext())
+            {
+                List<TrackList> results = null;
+
+                //code to go here
+
+                return results;
+            }
+        }//eom
     }
 }
