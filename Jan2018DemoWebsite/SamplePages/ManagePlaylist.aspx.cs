@@ -56,6 +56,7 @@ namespace Jan2018DemoWebsite.SamplePages
 
         protected void AlbumFetch_Click(object sender, EventArgs e)
         {
+            
             //code to go here
             MessageUserControl.TryRun(() =>
             {
@@ -88,9 +89,39 @@ namespace Jan2018DemoWebsite.SamplePages
 
         protected void TracksSelectionList_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
-            //code to go here
-           
-        }
+            //this method will only execute if the user has press
+            //    the plus sign on a visible row from the display
 
+            if (string.IsNullOrEmpty(PlaylistName.Text))
+            {
+                MessageUserControl.ShowInfo("PlayList Name", "You must supply a playlist name.");
+            }
+            else
+            {
+                //via security one can obtain the username
+                string username = "HansenB";
+                string playlistname = PlaylistName.Text;
+
+                //the trackid is attached to each ListView row
+                //   via the CommandArgument parameter
+                //Access to the trackid is done via the
+                //   ListViewCommandEventArgs e parameter
+                //The e parameter is treated as an object
+                //Some e parameter need to be cast as strings
+                int trackid = int.Parse(e.CommandArgument.ToString());
+
+                //all requred data can now be sent to the BLL
+                //    for further processing
+                //user friendly error handling
+                MessageUserControl.TryRun(() =>
+                {
+                    //connect to your BLL
+                    PlaylistTracksController sysmgr = new PlaylistTracksController();
+                    sysmgr.Add_TrackToPLaylist(playlistname, username, trackid);
+                    //code to retreive the up to date playlist and tracks
+                    //    for refreshing the playlist track list
+                },"Track Added","The track has been addded, check your list below");
+            }
+        }
     }
 }
