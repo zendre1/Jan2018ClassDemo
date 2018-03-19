@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem", "ChinookSys
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chinook.Data", "Chinook.Data\Chinook.Data.csproj", "{B6E85D59-FBA8-4BF4-B384-F893BA7E2F5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSecurity", "AppSecurity\AppSecurity.csproj", "{A6A70E05-9C9E-4DC3-BA02-CCBA45482A08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B6E85D59-FBA8-4BF4-B384-F893BA7E2F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6E85D59-FBA8-4BF4-B384-F893BA7E2F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6E85D59-FBA8-4BF4-B384-F893BA7E2F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A70E05-9C9E-4DC3-BA02-CCBA45482A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A70E05-9C9E-4DC3-BA02-CCBA45482A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A70E05-9C9E-4DC3-BA02-CCBA45482A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A70E05-9C9E-4DC3-BA02-CCBA45482A08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
