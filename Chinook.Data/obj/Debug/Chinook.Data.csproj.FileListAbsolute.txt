@@ -17,4 +17,12 @@ C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\EntityFr
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.dll
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.pdb
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csprojResolveAssemblyReference.cache
-C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\obj\Debug\Chinook.Data.csprojResolveAssemblyReference.cache
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Owin.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.xml
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Chinook.Data\bin\Debug\Newtonsoft.Json.xml

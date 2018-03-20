@@ -49,10 +49,8 @@ C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\System.
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\System.Web.Providers.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\WebGrease.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.AI.Web.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.ApplicationInsights.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\System.Web.Optimization.xml
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Antlr3.Runtime.pdb
@@ -242,3 +240,6 @@ C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\System.W
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.csprojResolveAssemblyReference.cache
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.dll
 C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Jan2018DemoWebsite.pdb
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\AppSecurity.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\AppSecurity.pdb
