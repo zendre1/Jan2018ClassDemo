@@ -11,7 +11,7 @@ using Chinook.Data.Entities;
 
 namespace ChinookSystem.DAL
 {
-    internal partial class ChinookContext : DbContext
+    public partial class ChinookContext : DbContext
     {
         public ChinookContext()
             : base("name=ChinookDB")
