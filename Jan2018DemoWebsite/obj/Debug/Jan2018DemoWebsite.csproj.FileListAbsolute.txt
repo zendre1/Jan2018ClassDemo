@@ -243,3 +243,6 @@ C:\Users\Owner\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\Ja
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\roslyn\System.IO.Pipes.AccessControl.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\AppSecurity.dll
 C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\AppSecurity.pdb
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\RdlCompile.cache
+C:\Users\dwelch\Documents\GitHub\Jan2018ClassDemo\Jan2018DemoWebsite\obj\Debug\RdlCompile.compiled
