@@ -241,6 +241,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="SamplePages\AlbumDetails.aspx" />
     <Content Include="SamplePages\EmployeeClientSupport.aspx" />
+    <Content Include="SamplePages\GenreAlbumReport.aspx" />
     <Content Include="SamplePages\ManagePlaylist.aspx" />
     <Content Include="SamplePages\ODSCRUD.aspx" />
     <Content Include="SamplePages\ODSQuery.aspx" />
@@ -454,6 +455,13 @@
     <Compile Include="SamplePages\EmployeeClientSupport.aspx.designer.cs">
       <DependentUpon>EmployeeClientSupport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SamplePages\GenreAlbumReport.aspx.cs">
+      <DependentUpon>GenreAlbumReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplePages\GenreAlbumReport.aspx.designer.cs">
+      <DependentUpon>GenreAlbumReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SamplePages\ManagePlaylist.aspx.cs">
       <DependentUpon>ManagePlaylist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -521,7 +529,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppSecurity\AppSecurity.csproj">
@@ -536,6 +543,9 @@
       <Project>{59ee60e8-8161-44ec-a1f5-e6eb308071c1}</Project>
       <Name>ChinookSystem</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\GenreAlbumReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
